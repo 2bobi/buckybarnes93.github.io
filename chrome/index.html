@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bibi's</title>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ffafa8fa83.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="body-wrap" class="dim">
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <i class="fas fa-sun" id="weather-icon"></i>
+                    <div id="weather" class="hidden">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-clipboard-list" id="todo-icon"></i>
+                    <div id="todo-wrap" class="hidden">
+                        <form id="todo-form">
+                            <input type="text" placeholder="やるべきことを書いてください" required>
+                        </form>
+                        <ul id="todo-list"></ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="contents-wrap">
+            <h2 id="clock">00:00:00</h2>
+            <form id="login-form" class="hidden">
+                <input required max-length="15" type="text" placeholder="お名前は何ですか" />
+                <input type='submit' value="log in">
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- background js -->
+    <script src="./js/background.js"></script>
+
+    <!-- weather js -->
+    <script src="./js/weather.js"></script>
+
+    <!-- todays text -->
+    <script src="./js/todayText.js"></script>
+
+    <!-- todos js -->
+    <script src="./js/todo.js"></script>
+
+    <!-- current clock -->
+    <script src="./js/currentclock.js"></script>
+
+    <!-- login -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
